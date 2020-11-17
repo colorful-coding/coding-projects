@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCapture tutorial</title>
+</head>
+<body>
+
+    <script src="./p5.js"></script>
+    <script src="./sketch.js"></script>
+    <script src="./src/CCapture.js"></script>
+    <script src="./src/gif.js"></script>
+    <script src="./src/gif.worker.js"></script>
+    <script src="./src/download.js"></script>
+
+    <script>
+
+        var capturer = new CCapture ({
+            format: 'gif',
+            workersPath: 'output/',
+            framerate: 60,
+            verbose: true
+        })
+
+    </script>
+    
+</body>
+</html>
